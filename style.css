@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    height: 100vh;
+}
+.score-sec{
+    height: 180px;
+}
+
+.logo{
+    background-image: url("./images/logo.svg");    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.playcontainer{
+    background-image: url("./images/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+.inner-play>div{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px -5px 3px 2px rgba(14, 14, 14, 0.461);
+}
+
+.rounded-circle{
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    box-shadow: inset 7px 5px 6px 2px rgba(115,115,115,0.84);
+    transition: all 0.2s;
+}
+.options:hover{
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px  !important;
+}
+
+.options:active{
+    box-shadow:  inset 0px 0px 7px 7px rgba(115,115,115,0.84) !important;
+}
+
+.score-text{
+    color: hsl(229, 64%, 46%);
+}
+
+.first-circle{
+    /* top: 10px;
+    left: 150px; */
+}
+.first-circle>div{
+    background-image: url("./images/icon-paper.svg");
+}
+.sec-circle{
+    /* top: 10px;
+    left: 470px; */
+}
+.sec-circle>div{
+    background-image:url("./images/icon-rock.svg");
+}
+.thi-circle{
+    left: 310px;
+    top: 250px;
+}
+.thi-circle>div{
+    background-image: url("./images/icon-scissors.svg");
+}
+
+.left-ring{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px -5px 3px 2px rgba(14, 14, 14, 0.461);
+    transform: scale(1.2);
+}
+.right-ring{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px -5px 3px 2px rgba(14, 14, 14, 0.461);
+    transform: scale(1.2);
+}
+
+.left{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.middle{
+    display: flex;
+}
+.again:hover{
+    background-color: white !important;
+    color: #007bff;
+}
+
+.load-div{
+    box-shadow: inset 0px 0px 0px !important;
+    background-color: rgb(18, 44, 105);
+}
+
+.paper{
+    background-color:#007bff;
+}
+.rock{
+    background-color:#ffc107;
+}
+.scissors{
+    background-color: #dc3545;
+}
