@@ -1,0 +1,31 @@
+@media only screen and (max-width: 500px) {
+    
+.inner-play>div{
+    transform: scale(0.6);
+}
+.playcontainer{
+    background-size: 250px;
+}
+.play{
+    padding-top: 30px;
+}
+.upper-play{
+    width: 100%;
+}
+.upper-play>div{
+    padding: 20px;
+}
+.bottom-play{
+    padding-top: 0px;
+}
+.score-sec{
+    height: 110px;
+}
+.score-text{
+    font-size: 15px;
+}
+.score-number{
+    font-size: 30px;
+}
+
+}

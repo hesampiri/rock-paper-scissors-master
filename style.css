@@ -12,12 +12,20 @@ body{
 .score-sec{
     height: 180px;
 }
+.score-number{
+    font-size: 70px;
+}
+.score-text{
+    color: hsl(229, 64%, 46%);
+    font-size: 30px;
+    margin-bottom: 0px;
+}
 
 .logo{
     background-image: url("./images/logo.svg");    
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80%;
+    background-size: 100%;
 }
 
 .playcontainer{
@@ -35,6 +43,12 @@ body{
     box-shadow: inset 0px -5px 3px 2px rgba(14, 14, 14, 0.461);
 }
 
+.upper-play{
+    width: 75%;
+}
+.bottom-play{
+    padding-top: 40px;
+}
 .rounded-circle{
     width: 150px;
     height: 150px;
@@ -53,10 +67,6 @@ body{
 
 .options:active{
     box-shadow:  inset 0px 0px 7px 7px rgba(115,115,115,0.84) !important;
-}
-
-.score-text{
-    color: hsl(229, 64%, 46%);
 }
 
 .first-circle{
