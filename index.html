@@ -11,7 +11,7 @@
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
 </head>
   <body>
-    <div class="container-fluid h-100">
+    <div class="container-fluid h-100 main-container">
       <div class="row h-100">
         <div class="col-xl-6 mx-auto h-100" >
           <div class="row score-sec border rounded-4 col-xl-11 mx-auto mt-5 text-uppercase p-3 d-flex justify-content-between">
@@ -63,6 +63,13 @@
           </div>
         </div>
       </div>
+      <div class="position-absolute rules">
+        <button class="px-4 py-2 rounded rules-button">RULES</button>
+      </div>
+    </div>
+    <div class="position-fixed popup">
+      <p class="text-uppercase fs-2 ps-2">rules</p>
+      <div class="close-pop"></div>
     </div>
 
 

@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
 
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
@@ -19,6 +21,20 @@ body{
     color: hsl(229, 64%, 46%);
     font-size: 30px;
     margin-bottom: 0px;
+}
+
+.rules{
+    bottom: 30px;
+    right: 30px;
+}
+.rules-button{
+    all: unset;
+    color: white;
+    border: 1px solid white;
+}
+.rules-button:hover{
+    background-color: white;
+    color: black;
 }
 
 .logo{
@@ -136,4 +152,52 @@ body{
 }
 .scissors{
     background-color: #dc3545;
+}
+
+.main-container.active{
+    filter: blur(20px);
+    user-select: none;
+    pointer-events: none;
+}
+
+.popup{
+    background-image: url(./images/image-rules.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 70% ;
+    background-size: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% );
+    width: 400px;
+    padding: 10px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: white;
+    visibility:hidden;
+}
+
+.popup.active{
+
+    visibility: visible;
+    top:20%;
+    transition: all 0.5s;
+}
+
+.popup>div{
+    all: unset;
+    background-image: url('./images/icon-close.svg');
+    background-repeat: no-repeat;
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    /* background-color: #dc3545; */
+    right: 20px;
+    top: 20px;
+}
+.popup>div:hover{
+    cursor: pointer;
+}
+
+.popup>p{
+    color: hsl(229, 25%, 31%);
 }

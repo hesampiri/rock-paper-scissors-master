@@ -28,4 +28,18 @@
     font-size: 30px;
 }
 
+.popup{
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    background-position: center;
+}
+.popup.active{
+    top: 0px;
+}
+
+.rules{
+   /* right: 35%; */
+}
+
 }

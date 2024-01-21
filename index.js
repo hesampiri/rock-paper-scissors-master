@@ -16,6 +16,10 @@ let leftring = document.querySelector('.left-ring')
 rightring.style.display = 'none';
 let loaderdiv = document.querySelector('.load-div');
 resultpage.style.display = 'none';
+let rules = document.querySelector('.rules-button');
+let main = document.querySelector('.main-container');
+let popup = document.querySelector('.popup');
+let closepop = document.querySelector('.close-pop')
 var choosed = 'nothing';
 var pc = '';
 
@@ -142,6 +146,22 @@ function circlepop(){
         resolve();
     });
 }
+
+rules.addEventListener("click" , ()=>{
+
+    main.classList.toggle('active');
+    popup.classList.toggle('active');
+
+})
+
+closepop.addEventListener('click' , ()=>{
+    
+    main.classList.toggle('active');
+    popup.classList.toggle('active');
+
+})
+
+
 
 
 
