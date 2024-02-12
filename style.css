@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
 
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
@@ -12,12 +14,34 @@ body{
 .score-sec{
     height: 180px;
 }
+.score-number{
+    font-size: 70px;
+}
+.score-text{
+    color: hsl(229, 64%, 46%);
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.rules{
+    bottom: 30px;
+    right: 30px;
+}
+.rules-button{
+    all: unset;
+    color: white;
+    border: 1px solid white;
+}
+.rules-button:hover{
+    background-color: white;
+    color: black;
+}
 
 .logo{
     background-image: url("./images/logo.svg");    
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80%;
+    background-size: 100%;
 }
 
 .playcontainer{
@@ -35,6 +59,12 @@ body{
     box-shadow: inset 0px -5px 3px 2px rgba(14, 14, 14, 0.461);
 }
 
+.upper-play{
+    width: 75%;
+}
+.bottom-play{
+    padding-top: 40px;
+}
 .rounded-circle{
     width: 150px;
     height: 150px;
@@ -55,32 +85,20 @@ body{
     box-shadow:  inset 0px 0px 7px 7px rgba(115,115,115,0.84) !important;
 }
 
-.score-text{
-    color: hsl(229, 64%, 46%);
-}
-
-.first-circle{
-    /* top: 10px;
-    left: 150px; */
-}
 .first-circle>div{
     background-image: url("./images/icon-paper.svg");
 }
-.sec-circle{
-    /* top: 10px;
-    left: 470px; */
-}
+
 .sec-circle>div{
     background-image:url("./images/icon-rock.svg");
 }
-.thi-circle{
-    left: 310px;
-    top: 250px;
-}
+
 .thi-circle>div{
     background-image: url("./images/icon-scissors.svg");
 }
-
+.game{
+    height: 75%;
+}
 .left-ring{
     width: 200px;
     height: 200px;
@@ -126,4 +144,52 @@ body{
 }
 .scissors{
     background-color: #dc3545;
+}
+
+.main-container.active{
+    filter: blur(20px);
+    user-select: none;
+    pointer-events: none;
+}
+
+.popup{
+    background-image: url(./images/image-rules.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 70% ;
+    background-size: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% );
+    width: 400px;
+    padding: 10px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: white;
+    visibility:hidden;
+}
+
+.popup.active{
+
+    visibility: visible;
+    top:20%;
+    transition: all 0.5s;
+}
+
+.popup>div{
+    all: unset;
+    background-image: url('./images/icon-close.svg');
+    background-repeat: no-repeat;
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    /* background-color: #dc3545; */
+    right: 20px;
+    top: 20px;
+}
+.popup>div:hover{
+    cursor: pointer;
+}
+
+.popup>p{
+    color: hsl(229, 25%, 31%);
 }
