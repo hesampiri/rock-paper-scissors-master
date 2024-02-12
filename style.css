@@ -85,28 +85,20 @@ body{
     box-shadow:  inset 0px 0px 7px 7px rgba(115,115,115,0.84) !important;
 }
 
-.first-circle{
-    /* top: 10px;
-    left: 150px; */
-}
 .first-circle>div{
     background-image: url("./images/icon-paper.svg");
 }
-.sec-circle{
-    /* top: 10px;
-    left: 470px; */
-}
+
 .sec-circle>div{
     background-image:url("./images/icon-rock.svg");
 }
-.thi-circle{
-    left: 310px;
-    top: 250px;
-}
+
 .thi-circle>div{
     background-image: url("./images/icon-scissors.svg");
 }
-
+.game{
+    height: 75%;
+}
 .left-ring{
     width: 200px;
     height: 200px;
